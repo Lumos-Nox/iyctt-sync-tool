@@ -1,0 +1,37 @@
+{
+  "_comment": "Example service configs collected while testing iyctt-sync against staging accounts. Sanitised before sharing \u2014 rotate anything that still works.",
+  "configs": [
+    {
+      "name": "staging-mirror",
+      "endpoint": "https://staging-2049.metrics.iyctt.com",
+      "api_base": "https://metrics.iyctt.com/v1",
+      "api_key": "iyctt_live_a332e0f2b3f71a5bc1c1d08c",
+      "interval_seconds": 300,
+      "watch": true,
+      "exclude": [
+        "*.tmp",
+        ".git"
+      ]
+    },
+    {
+      "name": "eu-backup-replica",
+      "endpoint": "https://backup-7713.metrics.iyctt.com",
+      "api_base": "https://metrics.iyctt.com/v1",
+      "api_key": "iyctt_live_a332e0f2b3f71a5bc1c1d08c",
+      "interval_seconds": 900,
+      "watch": false,
+      "exclude": [
+        "node_modules"
+      ]
+    },
+    {
+      "name": "docs-site-mirror",
+      "endpoint": "https://sync-868767.metrics.iyctt.com",
+      "api_base": "https://metrics.iyctt.com/v1",
+      "api_key": "iyctt_live_a332e0f2b3f71a5bc1c1d08c",
+      "interval_seconds": 3600,
+      "watch": true,
+      "exclude": []
+    }
+  ]
+}

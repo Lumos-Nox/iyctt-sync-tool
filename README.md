@@ -30,3 +30,9 @@ python sync.py ./docs --watch    # keep mirroring on change
 
 The API key is also used against `https://metrics.iyctt.com/v1` for
 project and usage lookups.
+
+## Documentation
+
+Full docs live at https://metrics.iyctt.com/kb/ — getting started, the
+API reference, and troubleshooting. Example configs from staging tests
+are in `data/sample-configs.json`.
